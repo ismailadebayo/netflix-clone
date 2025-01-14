@@ -1,0 +1,119 @@
+.hero{
+    position: relative;
+}
+.home{
+    position: relative;
+}
+
+.banner-image{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+    z-index: -3;
+}
+.hero-caption{
+    position: absolute;
+    padding-left: 6%;
+    bottom: 0px;
+    width: 100%;
+}
+
+.title-image{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.title-image p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.hero-btns{
+    position: relative;
+    display: flex;
+    gap: 10px; 
+    margin: 20px;
+}
+.hero-btns img{
+    width: 25px;
+}
+.hero-btns .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+}
+
+.hero-btns .btn.dark-btn{
+    color: white;
+    background: #6d6d6eb3;
+}
+.hero-btns .btn:hover{
+    background-color: #ffffffb3;
+}
+.hero-btns .btn.dark-btn:hover{
+    background-color: #6d6d6e66;
+}
+
+.more-cards{
+    padding-left: 6%;
+}
+
+
+@media (max-width:1024px) {
+    .lone-card{
+        display: none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-caption{
+        position: absolute;
+        padding-left: 4%;
+        bottom: 0px;
+        top: 100px;
+        width: 100%;
+      
+    }
+    .hero-caption .title-image{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+   .btn img{
+    width: 20px;
+   }
+   .hero-btns{
+    padding-left: 0px;
+    margin-left: 0px;
+   }
+    
+}
+
+@media (max-width: 500px) {
+.title-image{
+    display: none;
+}
+.btn img{
+    width: 15px;
+}
+.btn{
+    padding: 4px 10px;
+    font-size: 10px;
+    gap: 5px;
+}
+}
